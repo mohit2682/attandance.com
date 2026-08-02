@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<title>Time Ledger — Attendance &amp; Payroll</title>
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css" />
+<style>
+  /* Small corner link to the About page — kept outside the React root so it never
+     interferes with app state or layout. */
+  .site-nav-link {
+    position: fixed;
+    right: 14px;
+    bottom: 14px;
+    z-index: 40;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #F5F1E6;
+    background: #1F6F63;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 8px 14px;
+    border-radius: 9999px;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(15,51,44,0.35);
+  }
+  .site-nav-link:hover { background: #154F46; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<a class="site-nav-link" href="about.html">About Time Ledger</a>
+
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7/babel.min.js" crossorigin></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" crossorigin></script>
+
+<script type="text/babel" src="js/app.js"></script>
+</body>
+</html>
